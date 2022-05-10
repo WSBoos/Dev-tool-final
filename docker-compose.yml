@@ -1,0 +1,14 @@
+version: '3'
+services:
+  frontend:
+    image: wsboos/devtool-frontend-final:lastest
+    build: ./front-end
+    restart: always
+    ports:
+      - 3001:80
+  backend:
+    image: wsboos/devtool-backend-final:lastest
+    build: ./back-end
+    restart: always
+    ports:
+      - 4000:4000

@@ -1,7 +1,7 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const configs = require('./configs/database.js');
-const BlogModel = require('./model/model.js');
+const facultyModel = require('./model/model.js');
 const app = express();
 const port = 4000;
 
@@ -13,27 +13,13 @@ mongoose.connect(configs.mongouri, {
 
 app.use(express.json())
 
-app.get('/test', async(req, res) => {
+app.get('/api/falcuties', async(req, res) => {
     try {
-        let a = new BlogModel({ title : "DED" })
-        await a.save()
-        const result = await BlogModel.find()
-        res.send(result)
+       const result = await facultyModel.find()
+       res.status(200).send(result)
     }
     catch (err) {
-        err
-    }
-})
-
-app.get('/test', async(req, res) => {
-    try {
-        // let a = new BlogModel({ title : "DED" })
-        // await a.save()
-        const result = await BlogModel.find()
-        res.send(result)
-    }
-    catch (err) {
-        err
+        res.status(500).json({ msg : "something went wrong" })
     }
 })
 

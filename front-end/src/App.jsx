@@ -13,7 +13,7 @@ export default function App() {
       if (res.status >= 400) {
         throw new Error("Bad response from server");
       }
-
+      
       const user = await res.json();
 
       console.log(user);

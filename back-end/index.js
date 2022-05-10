@@ -3,7 +3,8 @@ const mongoose = require('mongoose')
 const configs = require('./configs/database.js');
 const facultyModel = require('./model/model.js');
 const app = express();
-const port = 4000;
+const cors = require('cors')
+const port = 5000;
 
 mongoose.Promise = global.Promise 
 mongoose.connect(configs.mongouri, {
@@ -11,6 +12,7 @@ mongoose.connect(configs.mongouri, {
     useUnifiedTopology : true
 })
 
+app.use(cors())
 app.use(express.json())
 
 app.get('/api/falcuties', async(req, res) => {

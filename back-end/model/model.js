@@ -1,11 +1,23 @@
 const mongoose = require('mongoose')
 
-const BlogSchema = mongoose.Schema({
-    title : {
-        type : String
-    }
+const facultyTable = mongoose.Schema({
+   faculty_name : {
+       type : String
+   },
+   faculty_course : {
+       type : String
+   },
+   start_date : {
+       type : String
+   },
+   due_date : {
+       type : String
+   },
+   person_info : {
+       type : String
+   }
 })
 
-const BlogModel = mongoose.model('Takai', BlogSchema)
+const facultyModel = mongoose.model('faculty', facultyTable)
 
-module.exports = BlogModel
+module.exports = facultyModel

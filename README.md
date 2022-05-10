@@ -6,6 +6,26 @@
 
 เข้าไป `http://localhost:3001/`
 
+## prometheus
+`http://localhost:9090/targets`
+
+## การออกแบบ Database
+   faculty_name : {
+       type : String
+   },
+   faculty_course : {
+       type : String
+   },
+   start_date : {
+       type : String
+   },
+   due_date : {
+       type : String
+   },
+   person_info : {
+       type : String
+   }
+
 ## Feature/Flow
 https://github.com/WSBoos/Dev-tool-final/wiki/Feature-Flow
 

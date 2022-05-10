@@ -11,19 +11,31 @@
 
 ## การออกแบบ Database
    faculty_name : {
+   
        type : String
+       
    },
+   
    faculty_course : {
+   
        type : String
+       
    },
+   
    start_date : {
+   
        type : String
    },
+   
    due_date : {
+   
        type : String
    },
+   
    person_info : {
+   
        type : String
+       
    }
 
 ## Feature/Flow

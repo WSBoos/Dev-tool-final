@@ -10,7 +10,7 @@
 `http://localhost:9090/targets`
 
 ## การออกแบบ Database
-   faculty_name : {
+   `faculty_name : {
    
        type : String
        
@@ -36,7 +36,7 @@
    
        type : String
        
-   }
+   }`
 
 ## Feature/Flow
 https://github.com/WSBoos/Dev-tool-final/wiki/Feature-Flow

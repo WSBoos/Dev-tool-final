@@ -1,7 +1,9 @@
 # Dev-tool-final
 
 ##การรัน
+
 `docker compose up -d`
+
 เข้าไป `http://localhost:3001/`
 
 ## Feature/Flow

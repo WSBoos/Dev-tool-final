@@ -1,5 +1,8 @@
 # Dev-tool-final
 
+## Feature/Flow
+https://github.com/WSBoos/Dev-tool-final/wiki/Feature-Flow
+
 ## รูปแบบของ commit message
 |commit message|ความหมาย|
 |:------------:|--------|
